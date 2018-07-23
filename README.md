@@ -1,2 +1,2 @@
-# Front-end-dev
-Front-end design
+# Web design Curriculum
+Welcome, this is my repo!
