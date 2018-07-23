@@ -1,53 +1,335 @@
-<Doctype! <!DOCTYPE html>
-        <meta charset="UTF-8">
-        <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700" rel="stylesheet"> 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1">  
+ <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <html>
 <head>
-        <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">    
 
-<title>Salvador Ahumada</title>
 <style>
-    .name {
-        font-family: 'Hammersmith One', sans-serif;
+/*----------------------------------------INICIO IMAGEN Y TEXTO CABECERA---------------------------------------------*/
+
+body, html {
+    height: 120%; /*Cambia el tamaño de la imagen*/
+    margin-top: 0px;
+    background-position: center;
+}
+
+.hero-image {
+  background-image: url("img/header3.jpg");
+  height: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.hero-image2 {
+  background-image: url("img/header3.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.titulo {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Raleway', sans-serif;
+    font-size: 5vw;
+  -webkit-animation: fade 2s;
+    animation: fade 2s;
+    animation-delay: 0s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    border: 0px solid red;
+    position: relative;
+    top: 3em;
+    line-height: 1.2em;
+  }
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@media screen and (max-width: 380px) {
+    .titulo{
+        font-size: 8vw;
+        top:70vw; 
+    }
+}
+.subtitulo {
+    text-align: center;
+    position:relative;
+    top: 7em;    
+    font-size: 2vw;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight:500;
+    -webkit-animation: fade 1s;
+    animation: fade 1s;
+    animation-delay: 0.4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@media screen and (max-width: 380px) {
+    .subtitulo{
+        font-size: 4vw;
+        top:80vw; 
+    }
+}
+/*----------------------------------------INICIO IMAGEN Y TEXTO CABECERA---------------------------------------------*/
+/*-------------------------------------------------INICIO BOTON------------------------------------------------------*/
+.button {
+    position: relative;
+    z-index: 1;
+    left:85vw;
+    top:1vw;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    margin: 20px 20px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;   
+    -webkit-transition-duration: 1s; 
+    transition-duration: 0.5s;
+    cursor: pointer;
+    -webkit-animation: fade 1s;
+    animation: fade .8s;
+    animation-delay: .8s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.button1 {
+    background-color: rgba(255, 255, 255, 0); 
+    color: rgb(0, 0, 0); 
+    border: 1px solid   rgb(0, 0, 0);
+  }
+
+  .button1:hover {  
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+  }
+  @media screen and (min-width: 3840px) {
+    .button{
+        top:-62vw;
         font-size: 40px;
+        padding-left: 1vw;
+        padding-right: 1vw; 
+        color: black;
     }
-    .main {
-        margin-top: -35px;
-        letter-spacing: 1px;
-        font-family:Arial, Helvetica, sans-serif;
+}
+
+.button2 {
+    position: relative;
+    left: -1.5vw;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin: 20px 20px;
+    padding-top:10px;
+    padding-bottom: 10px;  
+    -webkit-transition-duration: 1s; 
+    transition-duration: 0.5s;
+    cursor: pointer;
+    -webkit-animation: fade 1s;
+    animation: fade .8s;
+    animation-delay: .8s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.button3 {
+    background-color: rgba(255, 255, 255, 0); 
+    color: rgb(0, 0, 0); 
+    border: 1px solid   rgb(0, 0, 0);
+  }
+
+  .button3:hover {  
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(112, 112, 112);
+    border: 1px solid rgb(112, 112, 112);
+  }
+  @media screen and (min-width: 3840px) {
+    .button{
+        top:-62vw;
+        font-size: 40px;
+        padding-left: 1vw;
+        padding-right: 1vw; 
+        color: black;
     }
-    .aboutme-title {
-        font-family: 'Hammersmith One', sans-serif;
-        font-size: 30px;
+}
+/*-------------------------------------------------FINAL BOTON------------------------------------------------------*/
+/*---------------------------------------------INICIO BODY CABECERA--------------------------------------------------*/
+.body {
+  position: relative;
+  right: 42vw;
+border: 0px solid rgb(255, 0, 0);
+font-family: 'Roboto Slab', serif;
+font-size: 2vw;
+color: black;
+  }
+  @media screen and (max-width: 380px) {
+    .body{
+        position: relative;
     }
-    .aboutme-body {
-        letter-spacing: 1px;
-        font-family:Arial, Helvetica, sans-serif;
-    }
+}
+.head {
+position: relative;
+text-align: left;
+top: -4vw;
+font-family: 'Roboto Slab', serif;
+font-size: 2vw;
+color: black;
+
+}
+.head2 {
+position: relative;
+text-align: right;
+top: -4vw;
+font-family: 'Roboto Slab', serif;
+font-size: 2vw;
+color: black;
+
+}
 
 
+/*---------------------------------------------FINAL BODY CABECERA--------------------------------------------------*/
+/*---------------------------------------------INICIO BLOQUE DE TEXTO--------------------------------------------------*/
+.info2 {
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-top: -35%;
+    margin-bottom: -5%;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-left: 25%;
+    padding-right: 25%;
+    border: 0px solid red;
+    text-align: right;
+    background-color: rgb(116, 116, 116);
+    font-size: 28px;
+    font-family: 'Raleway', sans-serif;
+    background: transparent;
+}
+/*---------------------------------------------FINAL BLOQUE DE TEXTO--------------------------------------------------*/
+.tabla {
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(88, 88, 88);
+    padding-left: 10px;
+    font-size: 1.3vw;
+    width: 70%;
+    position: relative;
+    margin: auto;
+    margin-bottom: 150px;
+}
+@media
+	  only screen 
+    and (max-width: 360px) {
+		table, thead, tbody, th, td, tr {
+			display: block; 
+		}
+
+    }
+    .titulo-tabla {
+        color: rgb(43, 43, 43);
+        font-size: 2vw;
+        font-family: 'Roboto Slab', serif;
+    }
+    .myself {
+        position: absolute;
+        top: 9.5vw;
+        max-width: 100%;
+        height: auto;
+    }
+    .texto-tabla {
+        font-weight: lighter;
+    }
+    @media
+	  only screen 
+    and (max-width: 360px) {
+		.texto-tabla {
+            margin-top: 80vw;
+            font-size: 4vw;
+            margin-right: -15vw;
+		}
+    }
 </style>
-</center>
-<center>
-        <h1>
-            <p class="name"><b>Designer & Front-end Developer.</b></p></h1>
-</center>
-<body> 
-    <center><p class="main">Design is my passion.
-             Front-end is just another way to show my love for pretty
-              things.</p>
-              <p><center><h1>.</h1></center></p>
-              <p class="aboutme-title"><b>About me</b></p>
-              <p class="aboutme-body">My name is Salvador and I'm an
-                   Architect. But not a system architect!</p>
-                   <p class="aboutme-body">I'm a classic
-                   architect, the kind that designs houses. I apply what
-                   I learned in architectural school in my programming and design
-                   career.
-              </p>
-              <a href="mailto:ahumada1790@gmail.com">Contact me!</a>
-            </center></body>
-        </p> 
-        
+</head>
+<body>
+<div class="hero-image">
+     <!--INICIO BOTON CONTACTO-->
+ <a href="mailto:ahumada1790@gmail.com"><button class="button button1">CONTACT ME</button></a>
 
+ <!--FINAL BOTON CONTACTO-->
+    <div class="w3-container w3-center w3-animate-top"><div class="head">&lt/head&gt</div></div>
+         <div class="titulo" style="align-content: center">
+      Hi, my name is Salvador Ahumada <br> and I am a web designer.</h1>
+  </div>
+  <div class="subtitulo" style="align-content: center;">Design is my passion. Front-End is just another way to show my love for pretty things. </div>
+</div>
+            
+    <!--INICIO BODY TAG INICIO-->
+    <div class="w3-container w3-center w3-animate-top"><div class="head2">&lt/head&gt</div></div>
+</div>
+<p>   
+     <!--INTENTO DE JAVASCRIPT-->
+  
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+ AOS.init({
+ duration: 1200,
+})
+</script>
+<!--INTENTO DE JAVASCRIPT-->                
+            <div class="tabla"> 
+                   <table>
+                    <tr>
+                      <th><img src="img/myself.jpg" class="myself" height="300px" width="300px"></th>
+                      <th width="60%" style="font-weight: normal">
+                          <p>
+                                <div class="body" data-aos="fade-right">
+                                        &ltbody&gt
+                                      </div>
+                              <div class="titulo-tabla"><b>About me.</b></div>
+                          </p>
+                          <div class="texto-tabla">
+                        <p>My name is Salvador and I'm an Architect. But not
+                           a system architect, I'm the kind that designs houses.<br/></p>
+                          <p> I apply what I learned in architectural school in my design career, I had my
+                             first computer at 12 years old and ever since that day technology has been an important part
+                              of my life.</p>
+                              <p>My experience with coding started at 15 years old when I decide to study a technician career in
+                             computer systems, back then aside from learning the basics of computer science.</p>
+                             <p> <a href="https://www.behance.net/ahzep" target="_blank"><button class="button2 button3">Check my design portfolio here.</button></a></div></p>
+                            </th></tr>
+                        </div>
+                        </div>
+                  </table>  
+               
+            </div>        
+</p></div>
+             
+      </p>
+      <div class="hero-image2"></div>
+          <div class="info2" style="color: rgb(0, 0, 0)"> I use HTML & CSS to make my designs. I'm currently learning Javascript.
+              Check my Linkedin profile if you want to know more about my professional life.
+          </div>
 </body>
+</html>
