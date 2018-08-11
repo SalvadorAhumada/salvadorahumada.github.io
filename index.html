@@ -1,566 +1,564 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
-<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700" rel="stylesheet"> 
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
- <meta name="viewport" content="width=device-width, initial-scale=1">  
- <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,500,700" rel="stylesheet"> 
- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,500,100" rel="stylesheet">  
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!--LAS ANIMACIONES-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- ANIMACIONES CON JAVASCRIPT-->
+<link href="https://fonts.googleapis.com/css?family=Heebo:300" rel="stylesheet"> 
 <html>
 <head>
     <title>Salvador Ahumada</title>
-
-<style>
-
-body, html {
-    height: 100%;
-    background-position: auto;
-    -webkit-animation: fade 1s;
-    animation: fade 1s;
-    animation-delay: 0.05s;
-    opacity: 0;
-    animation-fill-mode: forwards;
-    width: auto;
-  }
-hr {
-    position: relative;
-    top: 100px;
-}
-@keyframes fade {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-#navbar {
-  overflow: hidden;
-  background-color: #2c2ca5;
-}
-
-#navbar a {
-  position: relative;
-  text-align: center;
-  display: block;
-  padding: 5px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-#navbar a.active {
-  color: white;
-  font-family: 'Raleway', sans-serif;
-}
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding-top:60px;
-}
-.close {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  right: 0%;
-  padding: 12px 16px;
-  transform: translate(0%, -50%);
-}
-.hero-image {
-    background-image: url("img/header3.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-attachment: fixed;
-}
-.hero-image::after {
-  display: block;
-  position: relative;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 70%);
-  height: 100%;
-  width: auto;
-  content: '';
-}
-.boton {
-    position: relative;
-    margin-top: 10px;
-    left: 88%;
-    font-family: 'Raleway', sans-serif;
-    font-size: 100%;
-    padding-right: 2%;
-    padding-left: 2%;
-    padding-bottom: .5%;
-    padding-top: 0.5%;
-    cursor: pointer;
-    -webkit-transition-duration: 1s; 
-    transition-duration: 0.5s;
-    cursor: pointer;
-    -webkit-animation: fade 1s;
-    animation: fade .8s;
-    animation-delay: .8s;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-    @media screen and (max-width: 1100px) {
-    .boton {
-        position: relative;
-        left: 80%;
-        
+    <style>
+                                                         {
+                                    outline: solid #f00 1px !important;
+                                                        }
+        body, html {
+            font-family: 'Heebo', sans-serif;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .site-body {
+            color: rgb(48, 48, 48);
+            text-align: right;
+            margin: auto;
+            width: 80%;
+            margin-top: 20px;
+            font-size: 120%;
+            line-height: 2rem;
+            margin-bottom: 300px;
+        }
+        @media screen and (min-width: 3000px) {
+        .site-body {
+        font-size: 200%;
+        }
     }
-    @media screen and (max-width: 560px) {
-        .boton {
+        .title-site-body {
+            color: rgb(255, 255, 255);
+            background: #000000;
+            background: linear-gradient(to right, #2c2c2c, #757575 50%, #464646);
+            text-align: center;
+            margin: auto;
+            width: 80%;
+            margin-top: 300px;
+            font-size: 250%;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 100;
+            padding-top: 1px;
+            line-height: 0.9;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .portfolio {
+            color: rgb(255, 255, 255);
+            background: linear-gradient(to right, #2c2c2c, #757575 50%, #464646);
+            text-align: center;
+            margin: auto;
+            width: 80%;
+            margin-top: 200px;
+            font-size: 250%;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 100;
+            padding-top: 1px;
+            line-height: 0.9;
+            padding-bottom: 6px;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .hero-image {
+            background-image: url("img/header_m.jpeg");
+            height: 120%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+         }
+         .hero-image::after {
+            display: block;
+            position: relative;
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 80%, rgb(255, 255, 255) 100%);
+            height: 100%;
+            width: auto;
+            content: '';
+         }
+
+        .hero-text {
+            font-size: 150%;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
             text-align:center;
-            left : 50%;
-            top: 115vw;
-            transform : translateX(-50%);
-            padding-right: 8vw;
-            padding-left: 8vw;
-            z-index: 1;
+            position: absolute;
+            width: 70%;
+            top: 42%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(48, 48, 48);
+            margin: 0;
         }
-    }
-}
-@media screen and (min-width: 3840px) {
+        .hero-text h1 {
+            margin: 0;
+        }
+        .hero-text button:hover {
+            background-color: #555;
+            color: white;
+        }
         .boton {
-            font-size: 200%;
+            z-index: 1;
+            position: relative;
+            float: right;
+            top: 20px;
+            right: 30px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            font-size: 80%;
+            padding-right: 3%;
+            padding-left: 3%;
+            padding-bottom: .5%;
+            padding-top: 0.5%;
+            cursor: pointer;
+            -webkit-transition-duration: 1s; 
+            transition-duration: 0.5s;
+            -webkit-animation: fade 1s;
+            animation: fade .8s;
+            animation-delay: .8s;
+            opacity: 1;
+            animation-fill-mode: forwards; 
+            -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+            -webkit-animation-delay: 1.5s;
+            -moz-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+            animation-delay: 1.0s;
+            opacity: 0;
+            animation-fill-mode: forwards;
         }
-}
-.boton1 {
-    background-color: rgba(255, 255, 255, 0); 
-    color: rgb(0, 0, 0); 
-    border: 1px solid   rgb(0, 0, 0);
-}
-.boton1:hover {  
-    background-color: rgba(255, 255, 255, 0);
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
-  }
-.head {
-    position: relative;
-    left: -45%;
-    margin-left: 45%;
-    margin-right: 45%;
-    bottom: 101%;
-    font-family: 'Roboto Slab', serif;
-    font-size: 160%;
-    font-weight: bold;
-}
-@media screen and (max-width: 1100px) {
-    .head {
-        position: relative;
-        left: -40%;
-        
-    }
-    @media screen and (max-width: 560px) {
-    .head {
-        position: relative;
-        left: -5%;
-        font-size: 90%;
-        bottom: 170vw;
-        
-        }
-    }
-}
-@media screen and (min-width: 3840px) {
-        .head {
-            font-size: 200%;
-        }
-}
-.title {
-    position: relative;
-    top: 40vh;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 350%;
--webkit-animation: fade 2s;
-    animation: fade 2s;
-    animation-delay: 0.5s;
-    opacity: 0;
-    animation-fill-mode: forwards;
-  }
 
+        .boton1 {
+            background-color: rgba(255, 255, 255, 0); 
+            color: rgb(0, 0, 0); 
+            border: 2px solid   rgb(0, 0, 0);
+        }
+        .boton1:hover {  
+            background-color: rgb(26, 26, 26);
+            color: rgb(255, 255, 255);
+            border: 2px solid rgb(26, 26, 26);
+        }
+        @media screen and (min-width: 3000px) {
+    .boton {
+        font-size: 30px;
+        }
+    }
+    @media screen and (max-width: 800px) {
+    .boton {
+         text-align:center;
+        left:  -50%;
+        transform : translateX(50%);
+        top: 70vh;
+        font-size: 15px;
+                }
+    }
+        .boton2 {
+            float: right;
+            z-index: 1;
+            position: relative;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            font-size: 80%;
+            padding-right: 3%;
+            padding-left: 3%;
+            padding-bottom: .5%;
+            padding-top: 0.5%;
+            cursor: pointer;
+            -webkit-transition-duration: 1s; 
+            transition-duration: 0.5s;
+            -webkit-animation: fade 1s;
+            animation: fade .8s;
+            animation-delay: .8s;
+            opacity: 1;
+            animation-fill-mode: forwards;
+        }
 
-@keyframes fade {
-    from {opacity: 0;}
-    to {opacity: 1;}
+        .boton3 {
+            background-color: rgba(255, 255, 255, 0); 
+            color: rgb(58, 58, 58); 
+            border: 2px solid   rgb(20, 20, 20);
+        }
+        .boton3:hover {  
+            background-color: rgb(44, 44, 44);
+            color: rgb(255, 255, 255);
+            border: 2px solid rgb(44, 44, 44);
+        }
+        .hero-text-title {
+            font-size: 300%;
+            font-weight: 500;
+            -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 @media screen and (max-width: 560px) {
-        .title {
-            font-size: 150%;
-            bottom: 80%;
+    .hero-text-title {
+        font-size: 110%;
         }
-}
-@media screen and (min-width: 3840px) {
-        .title {
-            font-size: 900%;
-                    }
-}
-@media only screen and (min-device-width : 570px) and (max-device-width : 900px) {
-    .title {
-        bottom: 90%;
     }
-}
-.tabla {
-  position: relative;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-	@media
-	  only screen 
-    and (max-width: 760px), (min-device-width: 768px) 
-    and (max-device-width: 1024px)  {
+@media screen and (min-width: 3000px) {
+    .hero-text-title {
+        font-size: 150px;
+        }
+    }
 
-		
-		table, thead, tbody, th, td, tr {
-			display: block;
-		}
+.hero-text-body {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(39, 39, 39);
+    font-size: 150%;
+    font-weight: 300;
+    opacity: 1;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+            -webkit-animation-delay: 1.1s;
+            -moz-animation-delay: 1.1s;
+            animation-delay: 1.1s;
+            animation-delay: 0.5s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+}
 
-		
-		thead tr {
-			position: absolute;
-			top: -9999px;
-			left: -9999px;
-		}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
-    tr {
-      margin: 0 0 0rem 0;
-    }
-		td {
-			/* Behave  like a "row" */
-			border-bottom: 0px solid #eee;
-			position: relative;
-      text-align: center;
-        }
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
-.head2 {
-    position: relative;
-    margin-left: 45%;
-    margin-right: 45%;
-    font-family: 'Roboto Slab', serif;
-    font-size: 160%;
-    left: 43%;
-    bottom: 25%;
-    font-weight: bold;
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
-    @media screen and (max-width: 560px) {
-    .head2 {
-        position: relative;
-        left: -20px;
-        font-size: 90%;
-        bottom: 25%;
-        font-size: 90%;
-        }
-    }
-@media screen and (min-width: 3840px) {
-        .head2 {
-            font-size: 200%;
-        }
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
-.head3 {
-    position: relative;
-    left: 2%;
-    margin-right: 90%;
-    font-family: 'Roboto Slab', serif;
-    font-size: 160%;
-    font-weight: bold;
-    top: -5%;
-}
-@media screen and (max-width: 1100px) {
-    .head3 {
-        position: relative;
-        left: -40%;
-        
-    }
-    @media screen and (max-width: 560px) {
-    .head3 {
-        position: relative;
-        left: 43%;
-        font-size: 90%;
-        }
-    }
-}
-@media screen and (min-width: 3840px) {
-        .head3 {
-            font-size: 200%;
-        }
-}
-.head4 {
-    position: relative;
-    left: 10%;
-    top: 100%;
-    font-family: 'Roboto Slab', serif;
-    font-size: 160%;
-    font-weight: bold;
-    bottom: 16%;
-    margin-right: 100%;
-    
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 @media screen and (max-width: 560px) {
-    .head4 {
-        position: relative;
-        left: 38%;
-        top: 27%;
-        font-size: 90%;
-        
-        }
-    }
-.tabla {
-    position: relative;
-    top: 25%;
-    margin-top: -10%;
-    margin-bottom: 12%;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 120%;
-    font-weight: lighter;
-    color: rgb(0, 0, 0);
-    padding-right: 10%;
-    padding-left: 10%;
-    padding-bottom: 2%;
-}
-.text-table {
-    margin-left: 10%;
-    text-align: right;
-}
-@media screen and (max-width: 360px) {
-        .text-table {
-            margin-left: 0%;
-        }
-}
-.boton2 {
-    cursor: pointer;
-    -webkit-transition-duration: 1s; 
-    transition-duration: 0.5s;
-    cursor: pointer;
-    -webkit-animation: fade 1s;
-    animation: fade .8s;
-    animation-delay: .8s;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-.boton3 {
-    background-color: rgba(255, 255, 255, 0); 
-    color: rgb(0, 0, 0); 
-    border: 1px solid   rgb(0, 0, 0);
-}
-.boton3:hover {  
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(0, 0, 0);
-  }
-.prueba {
-    position: relative;
-    right: -500px;
-    width: 500px;
-}
-.myself {
-    text-align: left;
-    width: 400px;
-    height: 400px;
-}
-@media screen and (max-width: 560px) {
-        .myself {
-            width: 150px;
-            height: 150px;
-        }
-}
-.aboutme {
-    bottom: 5%;
-    margin-left: 30%;
-    margin-right: 30%;
-    position:relative;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 200%;
-    color: rgb(0, 0, 0);
-}
-@media screen and (max-width: 1020px) {
-        .aboutme {
-            font-family: 'Roboto Slab', serif;
-            padding-left: 0%;
-        }
-  
-}
-@media screen and (max-width: 330px) {
-        .aboutme {
-            font-family: 'Roboto Slab', serif;
-            font-size: 150%;
-            padding-left: 0%;
-        }
-  
-}
-.info {
-    position: relative;
-    top: 50vh;
-    left: auto;
-    right: auto;
-    font-size: 120%;
-    font-family: 'Raleway', sans-serif;
-}
-.boton3 {
-    position: relative;
-    left: 0%;
-    bottom: 95%;
-    font-family: 'Raleway', sans-serif;
-    font-size: 80%;
-    padding-right: 2%;
-    padding-left: 2%;
-    cursor: pointer;
-    -webkit-transition-duration: 1s; 
-    transition-duration: 0.5s;
-    cursor: pointer;
-    -webkit-animation: fade 1s;
-    animation: fade .8s;
-    animation-delay: .8s;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-.boton4 {
-    background-color: rgba(255, 255, 255, 0); 
-    color: rgb(0, 0, 0); 
-    border: 1px solid   rgb(0, 0, 0);
-    margin-top: 5%;
-    margin-left: 60%;
-}
-.boton4:hover {  
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(0, 0, 0);
-}
-.contact {
-    position: relative;
-    top: 100%;
-    padding-bottom: 20px;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 75%
-
-}
-.links {
-position:relative;
-text-align:center;
-top: 0%;
-font-size: 120%;
-font-family: 'Poppins', sans-serif;
-}
-@media screen and (max-width: 560px) {
-    .links {
-        position: relative;
-        bottom:10%;
+    .hero-text-body {
         font-size: 100%;
         }
     }
-</style>
+@media screen and (min-width: 3000px) {
+    .hero-text-body {
+        font-size: 80px;
+        }
+    }
+.boton2 boton3 {
+    text-align: left;
+}
+.head1 {
+    position: relative;
+    float: left;
+    left: 20px;
+    top: 20px;
+    font-size: 110%;
+}
+@media screen and (min-width: 3000px) {
+    .head1 {
+        font-size: 60px;
+        }
+    }
+.head2 {
+    position: relative;
+    float:right;
+    right: 20px;
+    bottom: 27vh;
+    font-size: 110%;
+} 
+@media screen and (min-width: 3000px) {
+    .head2 {
+        font-size: 60px;
+        }
+    }  
+.head3 {
+    position: relative;
+    float: left;
+    left: 20px;
+    top: 20px;
+    font-size: 110%;
+}
+.head4 {
+    position: relative;
+    float: right;
+    right: 20px;
+    top: 20px;
+    font-size: 110%;
+}
+.myself {
+    position: relative;
+    float: left;
+    width: 30%;
+    margin-right: 15px;
+}
+@media screen and (max-width: 560px) {
+    .myself {
+        display: none;
+        }
+    }
+.myself-mobile {
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+@media only screen and (min-device-width : 561px) {
+    .myself-mobile {
+        display: none;
+    }
+}
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    width: 80%;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .title-site-body, .portfolio {
+        font-size: 25px;
+    }
+}
+a {
+    text-decoration: none;
+}
+.b {
+    position: relative;
+    float: left;
+    bottom: 10px;
+}
+.links {
+    margin: auto;
+    margin-top: 20rem;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    font-size: 110%;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    word-spacing: 25vw;
+}
+.body2 {
+  background: #ffffff;
+  background: linear-gradient(to bottom, #ffffff 10%, #ebebeb 55%, #f7f7f7 70%);
+}
+.footer {
+    text-align: center;
+    margin-bottom:10px;
+}
+.portfolio-content {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    border: 1px solid rgb(41, 41, 41);
+    border-radius: 0px 0px 10px 10px;
+}
+    </style>
 </head>
 <body>
-    <div id="navbar">
-        <a class="active">Please note this is a work in progress!<span class="close">&times;</span></a>
-    </div>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
-    </script>
-    <script>
-        AOS.init({
-        duration: 1200,
-        })
-    </script>      
     <div class="hero-image">
-                        <a href="mailto:ahumada1790@gmail.com">
-                        <button class="boton boton1">
-                            CONTACT ME
-                        </button>
-                </a>  
-        <div class="title">
-            Hi, my name is Salvador Ahumada</br>and I'm a <a style="color: rgb(255, 156, 25)">web designer</a>.
-        </div> 
-    </div>
-    </a>
-    <div class="head">
-            <div class="w3-container w3-center w3-animate-top">
-                &lthead&gt
-            </div>
-    </div>
-    <div class="head2">
-            <div class="w3-container w3-center w3-animate-top">
-                    &lt/head&gt
-            </div>
-    </div>
-    <div class="head3" data-aos="fade-right">
-            &ltbody&gt
-    </div>
-    <div class="aboutme">
-        About <b style="color: rgb(216, 138, 35)">me</b>
-    </div>
-    <div class="links">
-        <p>
-        <a href="https://www.linkedin.com/in/salvadorahumadazepeda/" target="_blank">Linkedin</a>
-        / 
-        <a href="https://github.com/SalvadorAhumada/" target="_blank">Github</a>
-        / 
-        <a href="https://coddeur.wordpress.com/" target="_blank">Blog</a></p>
-</div>  
-    <div class="tabla">
-            <table role="table">
-            <tbody role="rowgroup">
-              <tr role="row">
-                <td role="cell">
-                        <img src="img/myself.jpg" class="myself">
-                </td>
-                <td role="cell">
-                    <div class="text-table">
-                    My name is Salvador and I'm an Architect from <b>Guadalajara, México</b>. But not
-                    a system architect, I'm the kind that designs houses.
-                    <br/>
-                   <p> I apply what I learned in architectural school in my design career, I had my
-                      first computer at 12 years old and ever since that day technology has been an important part
-                       of my life.
-                    </p>
-                    <p>My experience with coding started at 15 years old when I decide to study a technician career in
-                      computer systems, currently I'm learning front-end with <b>HTML</b>, <b>CSS</b> and <b>JAVASCRIPT.</b>
-                    </p>
-                    <a href="https://www.behance.net/ahzep" target="_blank">
-                        <button class="boton2 boton3">
-                            CHECK MY DESIGN PORTFOLIO.
-                        </button>
-                    </a>
-                    </div>
-                </td>
-            </tbody>
-          </table>
-        <div class="info">
-            <p>
-                <h2>
-                My <b style="color: rgb(216, 138, 35)">Web design</b> portfolio.
-                </h2>
-            </p>
-            under construction.
+        <div class="hero-text">
+                <h1 class="hero-text-title">
+                     Hello! I'm <b>Salvador</b>
+                </h1>
+            <h1 class="hero-text-body"> <b>I'm a designer & architect.</b></h1>
+        </div>
+            <a href="mailto:ahumada1790@gmail.com">
+                <button class="boton boton1">
+                    CONTACT ME
+                </button>
+            </a>
+        <!--/////////////////////////////////////SCRIPTS//////////////////////////////////// -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+</script>
+<script>
+    AOS.init({
+    duration: 1200,
+    })
+</script>
+        <!--/////////////////////////////////////SCRIPTS//////////////////////////////////// -->
+            <div class="head1 w3-animate-left">
+            &lthead&gt
         </div>
     </div>
-    <div class="head4" data-aos="fade-left">
-            &lt/body&gt
+    <div class="head2 w3-animate-right">
+        &lt/head&gt
     </div>
-    <div class="contact">
-        <p>Made from scratch by Salvador Ahumada with Visual Studio Code<br>
-        Special thanks to pexels.com</p>
+    <div class="head3" data-aos="fade-left">
+        &ltbody&gt
     </div>
-        <script>
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
+    <div class="body2">
+    <div class="title-site-body">
+        About me
+    </div>
+        <div class="myself-mobile">
+        <img src="img/myself.jpg" width="40%">
+    </div>
+    <div class="site-body">
+            <img src="img/myself.jpg" class="myself">
+        My name is Salvador and I'm an Architect from <b>Guadalajara, México</b>. But not
+        a system architect, I'm the kind that designs houses.
+        <br/>
+        <p> I apply what I learned in architectural school in my design career, I had my
+            first computer at 12 years old and ever since that day technology has been an important part
+            of my life.
+        </p>
+        <p>My experience with coding started at 15 years old when I decide to study a technician career in
+             computer systems, back then aside from learning the basics of computer science, currently I'm 
+            learning front-end with <b>HTML</b>, <b>CSS</b> and <b>JAVASCRIPT.</b>
+        </p>
+            <a href="https://www.behance.net/ahzep" target="_blank">   
+            <button class="boton2 boton3">
+                Check my Behance portfolio
+            </button>
+        </a>
+    </div>
+        <div class="row"> 
+            <div class="column">
+                <div class="a">
+                        <div data-aos="fade-up">
+                            <img src="img/gallery1.png" style="width:100%">
+                        </div>
+                </div>
+                        <div data-aos="fade-up" data-aos-delay="1300">
+                    <img src="img/gallery2.png" style="width:100%">
+                        </div>
+            </div>
+            <div class="column">
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <img src="img/gallery3.png" style="width:100%"> 
+                </div>
+                <div data-aos="fade-up" data-aos-delay="1200">
+                    <img src="img/gallery4.png" style="width:100%">
+                </div>
+            </div>  
+            <div class="column">
+                <div class="b">
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <img src="img/gallery5.png" style="width:100%">
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="1100">
+                    <img src="img/gallery6.png" style="width:100%">
+                </div>
+            </div>
+            <div class="column">
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <img src="img/gallery7.png" style="width:100%">
+                </div>
+                <div data-aos="fade-up" data-aos-delay="1000">
+                    <img src="img/gallery8.png" style="width:100%">
+                </div>
+            </div>
+            </div>
+            <div class="portfolio">
+                My Web dev portfolio
+            </div>
+            <div class="portfolio-content">
+                Under construction
+            </div>
+            <div class="head4" data-aos="fade-right">
+                    &lt/body&gt
+                </div>
+            <div class="links">
+                <a href="https://github.com/SalvadorAhumada" target="_blank">
+                    GITHUB</a>
+                <a href="https://www.linkedin.com/in/salvadorahumadazepeda/" target="_blank">
+                    LINKEDIN</a>
+                <a href="https://coddeur.wordpress.com/" target="_blank">
+                    BLOG
+                </a>
+            </div>
+            <div class="footer" style="font-size: 75%">Designed by Salvador Ahumada from scratch</br> Thanks to pexels for the header.</div>
+            </div>
             
-            function myFunction() {
-              if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-              } else {
-                navbar.classList.remove("sticky");
-              }
-            }
-            </script>
-            <script>
-            var closebtns = document.getElementsByClassName("close");
-            var i;
-            
-            for (i = 0; i < closebtns.length; i++) {
-              closebtns[i].addEventListener("click", function() {
-                this.parentElement.style.display = 'none';
-              });
-            }
-            </script>
+</div>        
 </body>
 </html>
