@@ -1,0 +1,281 @@
+         html, body {
+            width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        font-family: 'Yantramanav', sans-serif;
+        background:#d46b41;
+	    overflow-x: hidden; /* For Opera */
+	        -webkit-box-shadow:
+		    inset white 0 0 0 5px;
+	        -moz-box-shadow:
+		    inset #ffffff 0 0 0 5px;
+	        box-shadow:
+		    inset rgb(255, 255, 255) 0 0 0 5px;
+            }
+            @media screen and (max-width: 650px) {
+            html, body {
+                box-shadow: inset rgb(235, 235, 235) 0 0 0 0px;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: rgb(240, 240, 240);
+            transition: 0.4s ease;
+        }
+        a:hover span {
+            padding-top: 15px;
+        }
+        a span:after {
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: 0px;
+            transition: 0.5s;
+        }
+        a span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        .about {
+            display: flex;
+            justify-content:space-around;
+            align-content: center;
+            width: 100%;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%)
+        } 
+        .boton2 {
+            z-index: 1;
+            font-family: 'Yantramanav', sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+            position: relative;
+            padding-right: 3%;
+            padding-left: 3%;
+            padding-bottom: .5%;
+            padding-top: 0.5%;
+            cursor: pointer;
+            -webkit-transition-duration: 1s; 
+            transition-duration: 0.5s;
+            -webkit-animation: fade 1s;
+            animation: fade .8s;
+            animation-delay: .8s;
+            opacity: 1;
+            animation-fill-mode: forwards;
+        }
+        .boton3 {
+            background-color: rgba(255, 255, 255, 0); 
+            border: 2px solid   rgb(235, 235, 235)
+        }
+        .boton3:hover {  
+            background-color: rgb(255, 255, 255);
+            color: rgb(0,164,166);
+            border: 2px solid rgb(0,164,166);
+        }
+        .title {
+            position: relative;
+            font-size: 70px;
+            font-weight: 500;
+        }
+        li {
+            position: relative;
+            float:right;
+            height: 100%;
+            margin: 0 30px;
+        }
+        ul {
+            list-style-type: none;
+            margin-top: 0;
+            padding: 0;
+            height: 100%;
+         }
+         .wrapper {
+            position: relative;
+            top: 30px;
+            font-family: 'Yantramanav', sans-serif;
+            font-weight: 500;
+            height: 90%;
+            margin: 0 auto;
+            width: 90%;
+            max-width: 2000px;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .bounceIn {
+            position: relative;
+            float:left;
+            bottom: 10px;
+        }
+        .line {
+            position: relative;
+            background: rgb(235, 235, 235);
+            height: 1px;
+            width: 100%;
+            top: 80px;
+        }       
+        @media screen and (max-width: 650px) {
+            li {
+                width: 100%;
+                text-align: center;
+                left: 30px;
+                margin-top:20px;
+            }
+            a:hover span {
+            padding-top: 0px;
+            }
+            .w3-container-1 {
+                text-align: center;
+            }
+            .line {
+                position: relative;
+                background: rgb(235, 235, 235);
+                height: 1px;
+                width: 100%;
+                top: 200px;
+            }
+            .title {
+                position: relative;
+                top: 100px;
+                font-size: 30px;
+            }
+            .body {
+                width: 650px;
+            }
+            .logo {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                bottom: 350px;
+            }
+            .animated {
+                position: relative;
+                top: 350px;
+            }
+        } 
+        @media screen and (min-width: 650px) {    
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: 1s ease;
+                background-color: #d46b41;
+                }
+
+            .portfolio-one:hover .overlay {
+                opacity: .8;
+                cursor: pointer;
+                }
+
+            .text{
+                position: relative;
+                top: 100px;
+                color: white;
+                font-weight: 200;
+                font-size: 20px;
+                width: 100%;
+                top: 40%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+                }
+            .overlay2 {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: 1s ease;
+                background-color: #d46b41;
+                }
+
+            .portfolio-two:hover .overlay2 {
+                opacity: .8;
+                cursor: pointer;
+                }
+
+            .text2 {
+                color: white;
+                font-weight: 200;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+                }
+        }
+@media screen and (max-width: 650px) {
+            .about {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                position: relative;
+                height: 100px;
+                top: 150px;
+            }
+            .text, .text2{
+                font-weight: 200;
+            }
+            .container {
+                position: relative;
+                width: 50%;
+                }
+            .image {
+                display: block;
+                width: 70%;
+                height: auto;
+                margin-top:10px;
+                margin-left: 50px;
+                margin-bottom: 100px;
+                }
+
+            .overlay, .overlay2 {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: #d46b41;
+                opacity:0.5;
+                margin-left: 5  0px;
+                }
+
+.text, .text2 {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 30%;
+  left: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+}
+.subtext{
+    margin-bottom: 100px;
+}
