@@ -1,224 +1,155 @@
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    font-family: 'Yantramanav', sans-serif;
-    background:#8fc93a;
-    overflow-x: hidden; /* For Opera */
-        -webkit-box-shadow:
-        inset white 0 0 0 5px;
-        -moz-box-shadow:
-        inset #ffffff 0 0 0 5px;
-        box-shadow:
-        inset rgb(255, 255, 255) 0 0 0 5px;
-        }
-        @media screen and (max-width: 650px) {
-        html, body {
-            box-shadow: inset rgb(235, 235, 235) 0 0 0 0px;
-        }
+    *{
+    border: 0px solid black;
     }
-a.link1 {
-    color:rgb(255, 255, 255);
-    -o-transition:color .2s ease-out, background .4s ease-in;
-    -ms-transition:color .2s ease-out, background .4s ease-in;
-    -moz-transition:color .2s ease-out, background .4s ease-in;
-    -webkit-transition:color .2s ease-out, background .4s ease-in;
-    transition:color .2s ease-out, background .4s ease-in;
-    }
-a.link1:hover{
-    color: #8fc93a; background: #ffffff; 
-    }
-a{
-    text-decoration: none;
-    color: rgb(240, 240, 240);
-    transition: 0.4s ease;
-    }
-    a:hover span {
-        padding-top: 15px;
-    }
-    a span:after {
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        right: 0px;
-        transition: 0.5s;
-    }
-    a span {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5s;
-    }
-    .title {
-        position: relative;
-        font-size: 70px;
-        font-weight: 500;
-    }
-    li {
-        position: relative;
-        float:right;
-        height: 100%;
-        margin: 0 30px;
-    }
-    ul {
-        list-style-type: none;
-        margin-top: 0;
-        padding: 0;
-        height: 100%;
-     }
-     .wrapper {
-        position: relative;
-        top: 30px;
-        font-weight: 500;
-        height: 90%;
+    html,body{
+        max-width: 1600px;
         margin: 0 auto;
-        width: 90%;
-        max-width: 2000px;
-    }
-    .bounceIn {
-        position: relative;
-        float:left;
-        bottom: 10px;
-    }
-    .line {
-        position: relative;
-        background: rgb(235, 235, 235);
-        height: 1px;
-        width: 100%;
-        top: 80px;
-    }       
-    @media screen and (max-width: 650px) {
-            li {
-            width: 100%;
-            text-align: center;
-            left: 30px;
-            margin-top:20px;
-        }
-        a:hover span {
-            padding-top: 0px;
-        }
-        .w3-container-1 {
-            text-align: center;
-            font-size: 50px !important;
-        }
-        .line {
-            position: relative;
-            background: rgb(235, 235, 235);
-            height: 1px;
-            width: 100%;
-            top: 200px;
-        }
-        .title {
-            position: relative;
-            top: 100px;
-            font-size: 30px;
-        }
-        .body {
-            width: 650px;
-        }
-        .logo {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            bottom: 350px;
-        }
-        .animated {
-            position: relative;
-            top: 350px;
-        }
-    }
-    .about {
-        height: 85%;
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        top: 40px;
-        position: relative;
-    } 
-    @media screen and (max-width: 650px) {
-        .about {
-            flex-direction:column-reverse;
-            top: 300px;
-            width: 200%;
-            text-align: center;
-            left: 30px;
-        }
-        .right {
-            position: relative;
-            font-size: 18px !important;
-        }
-        .left {
-            position: relative;
-            top: 100px;
-        }
-    }
-    textarea {
-        background-color: #8fc93a;
-        resize: none;
-        border: 1px solid white;
+        font-family: 'Yantramanav', sans-serif;
+        font-weight:200;
+        background:#8fc93a;
         color: white;
-    }
-    input {
-        background-color: #8fc93a;
-        resize: none;
-        border: 1px solid white;
-        color: white;
-    }
-    .boton2 {
-        z-index: 1;
-        font-weight: 300;
-        font-size: 20px;
-        position: relative;
-        padding-right: 3%;
-        padding-left: 3%;
-        padding-bottom: .5%;
-        padding-top: 0.5%;
-        cursor: pointer;
-        -webkit-transition-duration: 1s; 
-        transition-duration: 0.5s;
-        -webkit-animation: fade 1s;
-        animation: fade .8s;
-        animation-delay: .8s;
-        opacity: 1;
-        animation-fill-mode: forwards;
-    }
-    .boton3 {
-        background-color: rgba(255, 255, 255, 0); 
-        color: rgb(240, 240, 240);
-        border: 2px solid   rgb(235, 235, 235)
-    }
-    .boton3:hover {  
-        background-color: rgb(255, 255, 255);
-        color: #8fc93a;
-        border: 2px solid #8fc93a;
-    }
-    .contact {
-        font-size:60px; 
-        color: white;
-        flex: 1;
-    }
-    .form {
-        position: relative;
-        flex: 2;
-    }
-    .left {
         height: 100%;
+    }
+    a.link1 {
+        color:rgb(255, 255, 255);
+            -o-transition:color .2s ease-out, background .4s ease-in;
+            -ms-transition:color .2s ease-out, background .4s ease-in;
+            -moz-transition:color .2s ease-out, background .4s ease-in;
+            -webkit-transition:color .2s ease-out, background .4s ease-in;
+            transition:color .2s ease-out, background .4s ease-in;
+        }
+    a.link1:hover{
+        color: #8fc93a;;
+        background: #ffffff;
+    }
+    body{
+        font-family: 'Yantramanav', sans-serif;
+        padding: 3vh;   
+    }
+    input{
+        background:#8fc93a;
+        border: 1px solid white;
+        color: white;
+        width: 60%;
+    }
+    textarea{
+        background:#8fc93a;
+        border: 1px solid white;
+        color: white;
+        resize: none;
+        width: 80%;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px; 
+    }
+    ul li{
+        list-style:none;
+        display: inline;
+    }
+    header{
+        height:5rem;
+    }
+    section{
+        margin-top: 30px;
+    }
+    li{
+        padding-right: 30px;
+    }
+    #link-1{
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s;
+    }
+    #link-1:hover{
+        top: 15px;
+    }
+    .left{
         width: 40%;
+        text-align: justify;
+        font-size: 20px;
+    }
+    .right{
+        width: 40%;
+        font-size: 20px;
+    }
+    .line{
+        background-color: rgb(255, 255, 255);
+        height: 1px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .logo{
+        position: relative;
+        left: 20px;
+    }
+    .menu{
+        position: relative;
+        right: 20px;
+    }
+    ul{
+        position: relative;
+        top: 10px;
+    }
+    .menu a{
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-weight: 200;
+        }
+    .title{
+        font-size: 60px;
+    }
+    .body{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    button{
+        background: #8fc93a;
+        border: 2px solid white;
+        color: white;
+        cursor: pointer;
+    }
+    button:hover{
+        color: #8fc93a;;
+        background: #ffffff;
+    }
+
+/* --------------------MOBILE SCREENS START------------------ */
+    @media only screen and (max-width: 550px) {
+    header{
         display: flex;
         flex-direction: column;
+        height: 10rem;
     }
-    .right {
-        height: 100%;
-        width: 40%;
-        font-size: 27px;
-        font-weight: 300;   
-        color: white;
+    ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
-    @media screen and (min-width: 3000px) {
-        .contact {
-        flex: 0.2;
+    li{
+        position: relative;
+        left: 0px;
+        margin-bottom: 10px;
     }
-        .form {
-            flex: 2;
-            }
+    .logo{
+        text-align:center;
+        left: -10px;
     }
+    .line{
+        margin-top:50px;
+    }
+    .body{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+}
+/* ------------------MOBILE SCREENS END-----------------------*/
