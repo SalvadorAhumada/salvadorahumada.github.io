@@ -1,8 +1,21 @@
-       body{
+ body{
         font-family: 'Open Sans', sans-serif;
         margin: 20px auto;
+        height: 99vh;
+        margin: 0 auto;
+        box-sizing:border-box;
+        max-width: 1800px;
     }
     header{
+        height: 40vh;
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo{
         box-sizing: border-box;
         font-family: 'Josefin Sans', sans-serif;
         text-align: left;
@@ -23,45 +36,29 @@
             -ms-user-select: none; 
             user-select: none;
     }
-    section{
-        width: 50%;
-        margin: 0 auto;
-        font-weight: 700;
-        color: rgb(116, 116, 116);
-        margin-top: 150px;
-    }
-    section p:first-child{
-        text-transform: uppercase;
-    }
-    section p:nth-child(2){
+    .subtitle{
         text-align: center;
-        padding-top: 100px;
-        font-weight: 400;
-        word-spacing: 50px;
+        color: rgb(3, 116, 97);
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-    .toggle{
-        display: none
+    section{
+        height: 42vh;
+        text-transform: uppercase;
+        width: 70%;
+        margin: 0 auto;
+        font-weight: bold;
+        color: rgb(43, 43, 43);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
-    .scrolled{
-        position: fixed;
-        background: rgba(168, 170, 51, 0.295);
-        color: rgb(77, 77, 77);
-        width: 100%;
-        top: 0;
-        height: 50px;
-        padding: 15px 40px;
-        font-size: 1em;
-        font-weight: 400;
-        transition: .8s ease;
-        text-align: left;
-        font-family: 'Open Sans', sans-serif;
-    }
-    .scrolled-toggle{
-        display: inline;
-        float: right;
-    }
-    .w3-animate-opacity a{
-        text-decoration: none;
+    .links{
+        height: 30vh;
+        text-align: center;
+        padding-top: 25vh;
     }
     .link{
         position: relative;
@@ -88,10 +85,10 @@
     .link:hover{
         color: #ffffff;
         }
-
     a{
         color: rgb(150, 149, 149);
         text-decoration: none;
+        font-weight: lighter;
         display:inline-block;
         position: relative;
         overflow: hidden;
@@ -102,31 +99,3 @@
         letter-spacing: .15rem;
         line-height: 1.8;
         }
-    .scrolled-link{
-        display: none;
-    }
-    .link2:hover{
-        color: rgb(0, 0, 0);
-        transition:ease-in 0.5s;
-    }
-    h3{
-        text-align: center;
-        color: black;
-    }
-    .fourk{
-        max-width: 1800px;
-        cursor: crosshair;
-        height: 62vh;
-        margin: 0 auto;
-        display: flex;
-        justify-content: flex-start;
-}
-.title{
-    height:30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.main-about{
-    height: 40vh;
-}
