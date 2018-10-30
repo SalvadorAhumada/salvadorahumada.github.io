@@ -105,9 +105,6 @@
     .scrolled-link{
         display: none;
     }
-    .link2{
-
-    }
     .link2:hover{
         color: rgb(0, 0, 0);
         transition:ease-in 0.5s;
@@ -119,4 +116,17 @@
     .fourk{
         max-width: 1800px;
         cursor: crosshair;
-    }
+        height: 62vh;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-start;
+}
+.title{
+    height:30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.main-about{
+    height: 40vh;
+}
