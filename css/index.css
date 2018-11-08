@@ -254,6 +254,10 @@ footer{
 .text-footer{
     margin-bottom: 20px;
 }
+.text-footer a i{
+    width: 100%;
+    text-align: center;
+}
 /*LINK EFFECT*/
 .hover-3 {
   position: relative;
