@@ -1,13 +1,12 @@
  @font-face {
     font-family: 'SansProduct';
-    src: url('FONTS/Product Sans Regular.ttf');
+    src: url('.../FONTS/Product Sans Regular.ttf');
         }
     body{
         background: rgb(255, 255, 255);
         max-width: 2000px;
         margin: 0 auto;
     }
-/*----------------------MENU---------------------------*/
 .burger-menu {
   position: fixed;
   left: 20px;
