@@ -1,9 +1,9 @@
  @font-face {
     font-family: 'SansProduct';
-    src: url('../FONTS/Product Sans Regular.ttf');
+    src: url('FONTS/Product Sans Regular.ttf');
         }
-    body html{
-        background: rgb(240, 240, 240);
+    body{
+        background: rgb(255, 255, 255);
         max-width: 2000px;
         margin: 0 auto;
     }
@@ -190,6 +190,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     background: #cdd3d5;
+
 }
 .second-text{
     width: 40%;
@@ -250,6 +251,7 @@ footer{
     justify-content: center;
     align-items: flex-end;
     color: white;
+    font-family: 'Raleway', sans-serif;
 }
 .text-footer{
     margin-bottom: 20px;
@@ -377,5 +379,9 @@ p{
     video{
         width: 70vw;
         text-align: center;
+    }
+    #link1{
+        text-align: center;
+        width: 60%;
     }
 }
