@@ -1,6 +1,6 @@
  @font-face {
     font-family: 'SansProduct';
-    src: url('.../FONTS/Product Sans Regular.ttf');
+    src: url('../FONTS/Product Sans Regular.ttf');
         }
     body{
         background: rgb(255, 255, 255);
