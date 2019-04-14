@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Salvador Ahumada</title>
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Roboto:100|Prata" rel="stylesheet">   
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2542/jquery.scrollie.min_1.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.0.6/jquery.mousewheel.min.js"></script>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <!--Este script te permite cargar ciertas stylesheets solo para Chrome. Cargare background-attachment:inherit en chrome-->
+      <script type="text/javascript">
+      var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+      if(is_chrome){
+      document.write('<link rel="stylesheet" href="chrome.css" type="text/css">');
+      }
+  </script>
+</head>
+<body>
+  <div id="main-menu" class="main-menu">
+    <div id="icons" class="icons-hidden">
+      <a href="https://www.linkedin.com/in/salvadorahumadazepeda/" target="_blank">Linkedin</a>
+      <a href="https://github.com/SalvadorAhumada" target="_blank">Github</a>
+      <a href="https://twitter.com/ahzep" target="_blank">Twitter</a>
+      <a href="https://dribbble.com/ahzep" target="_blank">Dribbble</a>
+      <div id="footer-menu">
+          Made by Salvador Ahumada with love &#60;3
+        </div>
+    </div>
+  </div>
+  <header>
+      <div class="container">
+        <a href="mailto:ahumada1790@gmail.com" class="contact-me"><i class="far fa-envelope fa-lg"></i></a>
+          <div class="b-menu" onclick="toggleClass(),Animations()">
+              <div class="one" id="one"></div>
+              <div class="two" id="two"></div>
+              <div class="three" id="three"></div>
+          </div>
+      </div>
+  </header>
+  <main>
+    <p>Hello! my name is Salvador Ahumada.</p>
+    <p>(and I'm a web designer btw)</p>
+  </main>
+  <section class="first-section">
+    <div data-aos="fade-right">
+      <p>I'm a self &mdash; taught web designer and computer lover currently living and learning in <span style="color:lightseagreen">Guadalajara, México.</span></p>
+    </div>
+    <div>
+      <p data-aos="fade-right">What I know.</p>
+      <p>
+        <i class="fab fa-html5" data-aos="zoom-in" title="HTML5"></i>
+        <i class="fab fa-css3-alt" data-aos="zoom-in" data-aos-delay="300" title="CSS3"></i>
+        <i class="fab fa-js" data-aos="zoom-in" data-aos-delay="600" title="Javascript"></i>
+        <i class="fab fa-php" data-aos="zoom-in" data-aos-delay="900" title="PHP"></i>
+        <span>
+            <img src="mysql.png" width="50em" height="50em" data-aos="zoom-in" data-aos-delay="1200" title="MySQL">
+        </span>
+        <i class="fab fa-bootstrap" data-aos="zoom-in" data-aos-delay="1500"></i>
+        <span></span>
+        <span style="font-size: calc(7px + 0.5vw);" data-aos="zoom-in" data-aos-delay="1500">More coming soon...</span>
+        <span></span>
+      </p>
+    </div>
+    <div data-aos="fade-down">
+        <p><a href="">Click here</a> to check my resumé</p>
+        <p style="margin: 0;"><span style="font-size:30px;">↓</span>Scroll down to see my projects<br>
+    </div>
+  </section>
+  <section class="second-section" id="second-section">
+    <img id="selector" src="frontend.png">
+    <div class="second-section-title">
+      <p>FrontEndBasics</p>
+    </div>
+  </section>
+  <section class="third-section" id="third-section">
+      <img id="selectorTwo" src="aesthetic.png">
+      <div class="third-section-title">aestheticwave</div>
+  </section>
+  <section class="fourth-section" id="fourth-section">
+    <img id="selectorThree" src="inbersus.png">
+    <div class="fourth-section-title">inbersus</div>
+</section>
+<section class="fifth-section">
+  <footer>
+    <p>Hire me!</p>
+    <p>If you want to work with me, talk about technology or just ask me anything just send me an email.</p>
+      <a href="">
+      ahumada1790@gmail.com
+      </a>
+      <p>&#8594;</p>
+        <p>
+        <a href="https://www.linkedin.com/in/salvadorahumadazepeda/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/SalvadorAhumada" target="_blank">
+          <i class="fab fa-github-square"></i>
+        </a>
+      </p>
+  </footer>
+</section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    $("body,html").animate({
+    scrollTop: 1
+    }, 0);
+    </script>
+    
+    <script src="index.js"></script>
+</body>
+</html>
