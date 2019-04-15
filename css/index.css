@@ -1,6 +1,5 @@
  @font-face {
     font-family: 'SansProduct';
-    src: url('../FONTS/Product Sans Regular.ttf');
         }
    
 body,
@@ -366,9 +365,14 @@ color: #ffe572;
   color: #500092;
 }
 
+.fa-vuejs {
+  color:rgb(41, 185, 125);
+}
+
 .first-section div:nth-child(2) {
     width: 70vw;
     text-align: center;
+    margin: 10vw;
 }
 
 .first-section div:nth-child(2) p:nth-child(2) {
@@ -376,7 +380,7 @@ color: #ffe572;
     font-size: calc(14px + 3vw); 
     grid-template-columns: auto auto auto;
     grid-gap: 5vw;
-    margin: 10vw 0;
+    margin: 5vw 0;
 
 }
 
