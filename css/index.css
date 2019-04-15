@@ -604,7 +604,7 @@ footer p:nth-child(5) {
   font-size: calc(14px + 2.3vw);
   text-align: center;
   word-spacing: 50px;
-  padding: 25px;
+  padding: 0;
 }
 
 
