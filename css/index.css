@@ -452,6 +452,11 @@ color: #ffe572;
   transition: 2s;
 }
 
+.fourth-section-title {
+  padding-left: 5%;
+  padding-right: 3%;
+}
+
 .second-section-title,
 .third-section-title,
 .fourth-section-title {
