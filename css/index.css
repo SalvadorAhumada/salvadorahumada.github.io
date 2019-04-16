@@ -369,6 +369,10 @@ color: #ffe572;
   color: #29b97d;
 }
 
+.fa-wordpress {
+  color: rgb(33, 117, 155);
+}
+
 .first-section div:nth-child(2) {
     width: 70vw;
     text-align: center;
