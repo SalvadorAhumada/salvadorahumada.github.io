@@ -459,10 +459,10 @@ color: #ffe572;
   font-family: 'Questrial', sans-serif;
   font-size: calc(12px + 2vw);
   position: absolute;
-  transform-origin:right;
+  transform-origin:top;
   right: calc(12px + 2vw);
   text-align:center;
-  left : 83%;
+  top : 60%;
   transform : translateY(-83%) rotate(-90deg);
 }
 
