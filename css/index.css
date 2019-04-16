@@ -346,19 +346,19 @@ color: #ffe572;
 }
 
 .fa-css3-alt {
-    color: blue;
+    color: #0000ff;
 }
 
 .fa-html5 {
-    color: rgb(255, 123, 0);
+    color: #ff7b00;
 }
 
 .fa-js {
-    color: rgb(251, 255, 0);
+    color: #f7df1e;
 }
 
 .fa-php {
-    color: rgb(0, 0, 194);
+    color: #0000c2;
 }
 
 .fa-bootstrap {
@@ -366,7 +366,7 @@ color: #ffe572;
 }
 
 .fa-vuejs {
-  color:rgb(41, 185, 125);
+  color: #29b97d;
 }
 
 .first-section div:nth-child(2) {
