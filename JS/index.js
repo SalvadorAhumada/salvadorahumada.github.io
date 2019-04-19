@@ -89,4 +89,60 @@ el.removeClass("pop");
 
 });
 
-//add class when a div is in screen
+//div following pointer
+
+$('.selector').bind('mousemove', function(e){
+$('#tail_one').css({
+   left:  e.clientX + 20,
+   top:   e.clientY
+});
+});
+
+$('.selector').bind('mouseleave', function(e){
+$('#tail_one').css({
+   display:  'none'
+});
+});
+$('.selector').bind('mouseenter', function(e){
+$('#tail_one').css({
+   display:  'block'
+});
+});
+
+//section-two
+
+$('#selectorTwo').bind('mousemove', function(e){
+$('#tail_two').css({
+   left:  e.clientX + 20,
+   top:   e.clientY
+});
+});
+
+$('#selectorTwo').bind('mouseleave', function(e){
+$('#tail_two').css({
+   display:  'none'
+});
+});
+$('#selectorTwo').bind('mouseenter', function(e){
+$('#tail_two').css({
+   display:  'block'
+});
+});
+
+$('#selectorThree').bind('mousemove', function(e){
+   $('#tail_three').css({
+      left:  e.clientX + 20,
+      top:   e.clientY
+   });
+   });
+   
+   $('#selectorThree').bind('mouseleave', function(e){
+   $('#tail_three').css({
+      display:  'none'
+   });
+   });
+   $('#selectorThree').bind('mouseenter', function(e){
+   $('#tail_three').css({
+      display:  'block'
+   });
+});
