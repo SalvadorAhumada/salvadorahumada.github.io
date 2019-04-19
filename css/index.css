@@ -1,7 +1,3 @@
- @font-face {
-    font-family: 'SansProduct';
-        }
-   
 body,
 html {
     width: 100%;
@@ -15,7 +11,7 @@ p {
 }
 
 .white-menu {
-  background-image: url('/img/background-menu.jpg')!important;
+  background-image: url('/background-menu.jpg')!important;
   box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.94)!important;
 }
 
@@ -171,7 +167,7 @@ main p:nth-of-type(2) {
 #main-menu {
   width:100%;
   height:100%;
-  background: url('/img/background-menu.jpg');
+  background: url('/background-menu.jpg');
   box-shadow: inset 0 0 0 1000px rgba(34, 34, 34, 0.98);
   background-size: 100%;
   position: fixed;
@@ -332,6 +328,7 @@ color: #ffe572;
     font-family: 'Prata', serif;
     color: #222222;
     position: relative;
+    margin: 15px;
 }
 
 .first-section div:nth-child(1),
@@ -366,7 +363,7 @@ color: #ffe572;
 }
 
 .fa-vuejs {
-  color: #29b97d;
+  color:#29b97d;
 }
 
 .fa-wordpress {
@@ -425,6 +422,7 @@ color: #ffe572;
 .first-section div:nth-child(3) {
     align-self: flex-end;
     font-size: calc(12px + 0.4vw);
+    padding-right: 10px;
 }
 
 .first-section a {
@@ -456,15 +454,10 @@ color: #ffe572;
   transition: 2s;
 }
 
-.fourth-section-title {
-  padding-left: 5%;
-  padding-right: 3%;
-}
-
 .second-section-title,
 .third-section-title,
 .fourth-section-title {
-  color: lightseagreen;
+  color: mediumseagreen;
   font-family: 'Questrial', sans-serif;
   font-size: calc(12px + 2vw);
   position: absolute;
@@ -473,6 +466,11 @@ color: #ffe572;
   text-align:center;
   top : 60%;
   transform : translateY(-83%) rotate(-90deg);
+}
+
+.fourth-section-title {
+  padding-left: 5%;
+  padding-right: 3%;
 }
 
 @media only screen and (max-width:900px) {
@@ -489,7 +487,7 @@ color: #ffe572;
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 50vh;
+    height:80vh;
   }
 }
 
@@ -583,7 +581,7 @@ footer {
   justify-content: center;
   font-weight: lighter;
   flex-direction: column;
-  background-image: url('/img/background-menu.jpg');
+  background-image: url('background-menu.jpg');
   background-attachment: fixed;
   box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.94);
   position: relative;
@@ -631,4 +629,27 @@ footer p:nth-child(7) {
   bottom: 0;
   font-size: 12px;
   font-weight: bold;
+}
+
+/*div following pointer*/
+
+#tail_one,
+#tail_two,
+#tail_three {
+  position: fixed;
+  display: none;
+  background: rgb(255, 255, 255);
+  padding: 5px 10px;
+  font-family: 'Questrial', sans-serif;
+  background: mediumseagreen;
+  color:white;
+  box-shadow: 2px 2px 1px rgb(8, 8, 8);
+  z-index: 3;
+  width: 200px;
+}
+
+.something {
+  width: 200px;
+  height: 160px;
+  background: yellow;
 }
