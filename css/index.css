@@ -370,6 +370,10 @@ color: #ffe572;
   color: rgb(33, 117, 155);
 }
 
+.fa-node-js {
+  color: #2aee07;
+}
+
 .first-section div:nth-child(2) {
     width: 70vw;
     text-align: center;
