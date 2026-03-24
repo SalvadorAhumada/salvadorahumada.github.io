@@ -127,6 +127,12 @@
         column-count: 1;
     }
   }
+  @media (min-width: 567px) and (max-width: 992px) {
+    .main {
+      width: 80%;
+      min-width: 600px;
+    }
+  }
   @-webkit-keyframes fade-out {
     0% {
       opacity: 1;
